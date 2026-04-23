@@ -1,0 +1,64 @@
+.newsletter-wrap {
+  background: #F0F0F0;
+  padding: 48px 80px 0;
+}
+
+.newsletter-bar {
+  max-width: 1240px;
+  margin: auto;
+  background: #000;
+  border-radius: 20px;
+  padding: 36px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.newsletter-bar h3 {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 900;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 300px;
+}
+
+.newsletter-form input {
+  border: none;
+  outline: none;
+  background: #fff;
+  padding: 12px 18px;
+  border-radius: 999px;
+  font-size: 13px;
+  color: #111;
+}
+
+.newsletter-form button {
+  background: #fff;
+  color: #000;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.newsletter-form button:hover { background: #eee; }
+
+@media (max-width: 1024px) {
+  .newsletter-wrap { padding: 40px 40px 0; }
+}
+@media (max-width: 768px) {
+  .newsletter-wrap { padding: 30px 20px 0; }
+  .newsletter-bar { flex-direction: column; text-align: center; padding: 28px 24px; }
+  .newsletter-form { min-width: unset; width: 100%; }
+}
