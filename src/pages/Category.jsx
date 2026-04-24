@@ -52,7 +52,7 @@ export default function Category() {
 
   // Filter state
   const [priceMin, setPriceMin] = useState(500);
-  const [priceMax, setPriceMax] = useState(2000);
+  const [priceMax, setPriceMax] = useState(5000);
   const [selectedColor, setSelectedColor] = useState(null);
   const [selectedSize, setSelectedSize] = useState("Large");
   const [mobileOpen, setMobileOpen] = useState(false);
