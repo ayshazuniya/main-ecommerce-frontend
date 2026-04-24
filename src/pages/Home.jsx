@@ -126,7 +126,7 @@ function Section({ title, products, navigate, link, loading }) {
   return (
     <section className="products">
       <h2>{title}</h2>
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: "20px", marginTop: "24px" }}>
+      <div className="home-product-grid">
         {loading ? (
           <Skeleton type="product-card" count={4} />
         ) : (
